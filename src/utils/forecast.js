@@ -11,6 +11,7 @@ const forecast=(long,lat,callback)=>{
             callback('Location does not Exist!',undefined)
         } else {
             temp=(body.currently.temperature-32) * 5/9
+            temp=temp.toFixed(2)
             callback(undefined,`${body.currently.summary}. There is ${body.currently.precipProbability*100}% chance of rain. Outside temperature is ${temp} Celcius`)
         }
 
