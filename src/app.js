@@ -34,8 +34,7 @@ app.get('/',(req,res)=>{
 app.get('/help',(req,res)=>{
     res.render('help',{
         title:'Help',
-        name:'Pradumn',
-        helpText:'Any PRs are welcome on https://github.com/PradumnUpadhyay :)'
+        name:'Pradumn'
     })
 })
 app.get('/about',(req,res)=>{
