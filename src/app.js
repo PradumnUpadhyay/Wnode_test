@@ -35,7 +35,7 @@ app.get('/help',(req,res)=>{
     res.render('help',{
         title:'Help',
         name:'Pradumn',
-        helpText:'Some help for you...'
+        helpText:'Any PRs are welcome on https://github.com/PradumnUpadhyay :)'
     })
 })
 app.get('/about',(req,res)=>{
@@ -57,6 +57,7 @@ if(!req.query.address)
             return res.send({err})
         }
         forecast(longitude,latitude,(err,forecastData)=>{
+    
             if(err){
                 return res.send({err})
             }
